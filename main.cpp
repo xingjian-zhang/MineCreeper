@@ -20,25 +20,33 @@ int main() {
         while (row_sel == -1) {
 // Get a valid move
             int r, c;
-            cout << "row? ";
-            cin >> r;
-
-            cout << "col? ";
-            cin >> c;
-            if (!sweeper.validRow(r)) {
+            cout << "row, col = ";
+            cin >> r >> c;
+            if (r * c < 0){
+                cout << "Invalid input\n";
+                continue;
+            }
+            if (!sweeper.validRow(abs(r))) {
                 cout << "Row out of bounds\n";
                 continue;
             }
-            if (!sweeper.validCol(c)) {
+            if (!sweeper.validCol(abs(c))) {
                 cout << "Column out of bounds\n";
                 continue;
             }
-            if (sweeper.isVisible(r,c)) {
+            if (sweeper.isVisible(abs(r),abs(c))) {
                 cout << "Square already visible\n";
                 continue;
             }
-            row_sel = r;
-            col_sel = c;
+            if (c > 0) {
+                row_sel = r;
+                col_sel = c;
+            }
+            else {
+                sweeper.flag(abs(r),abs(c));
+                sweeper.display(false);
+                continue;
+            }
         }
 // Set selected square to be visible. May effect other cells.
         if (!sweeper.play(row_sel,col_sel)) {

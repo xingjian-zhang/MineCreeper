@@ -12,7 +12,7 @@ using namespace std;
 
 Minesweeper::Minesweeper() {
 
-    srand(time(NULL));      //initialize the random seed
+    srand(time(nullptr));      //initialize the random seed
     bomb_num = 0;
 
     //initialize the board randomly under known bomb probability
@@ -51,13 +51,16 @@ void Minesweeper::display(const bool argu) {
     cout << "\n";
 
     if (!argu) {
-
-
         for(int i = 1; i < SIZE + 1; i++) {
             cout << i % 10 << '|';
             for (int j = 1; j < SIZE + 1; j++) {
                 if (!isVisible(i, j)) {
+                    if (isflag(i, j)) {
+                        cout << "P ";
+                    }
+                    else {
                     cout << "  ";
+                    }
                     continue;
                 }
                 isEmpty(i, j) ? cout << "0 " : cout << Board[i][j].bomb_num << ' ';
@@ -141,6 +144,14 @@ bool Minesweeper::play(const int row, const int col) {
 
 void Minesweeper::enVisible(const int row, const int col) {
     Board[row][col].visible = true;
+}
+
+void Minesweeper::flag(const int row, const int col) {
+    Board[row][col].flag = !Board[row][col].flag;
+}
+
+bool Minesweeper::isflag(const int row, const int col) {
+    return Board[row][col].flag;
 }
 
 

@@ -9,6 +9,7 @@ struct Tile {
     int bomb = 0;
     int bomb_num = 0;
     bool visible = false;
+    bool flag = false;
 };
 
 struct coordinate{

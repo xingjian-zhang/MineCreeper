@@ -11,7 +11,7 @@
 #include <vector>
 
 #define SIZE 10
-#define BOMB_PROBABILITY 15
+#define BOMB_PROBABILITY 10
 
 using namespace std;
 
@@ -22,27 +22,31 @@ public:
 
     //if true: display the board with bombs shown when the game is over
     //if false: display the current board (i.e. without bombs)
-    void display(const bool argu);
+    void display(bool argu);
 
     //whether the cell is a bomb or empty
-    bool isBomb(const int row, const int col);
-    bool isEmpty(const int row, const int col);
+    bool isBomb(int row, int col);
+    bool isEmpty(int row, int col);
 
     //whether the game is over (win) i.e. all cells are visible
     bool done();
 
     //whether the given cell is valid
-    bool validRow(const int row);
-    bool validCol(const int col);
+    bool validRow(int row);
+    bool validCol(int col);
 
     //whether the given cell is visible
-    bool isVisible(const int row, const int col);
+    bool isVisible(int row, int col);
     //make the given cell visible
-    void enVisible(const int row, const int col);
+    void enVisible(int row, int col);
 
     //trigger the given cell
     //may trigger a chain reaction
-    bool play(const int row, const int col);
+    bool play(int row, int col);
+
+    //flag
+    void flag(int row, int col);
+    bool isflag(int row, int col);
 
 
 
