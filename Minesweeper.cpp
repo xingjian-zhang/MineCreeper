@@ -12,7 +12,7 @@ using namespace std;
 
 Minesweeper::Minesweeper() {
 
-    srand(time(0));      //initialize the random seed
+    srand(time(NULL));      //initialize the random seed
     bomb_num = 0;
 
     //initialize the board randomly under known bomb probability
@@ -44,20 +44,23 @@ Minesweeper::Minesweeper() {
 }
 
 void Minesweeper::display(const bool argu) {
-    cout << "  ";
+    cout << " ";
     for (int j = 1; j < SIZE + 1; ++j) {
         cout << j % 10 << '_';
     }
     cout << "\n";
 
-    if (argu == false) {
+    if (!argu) {
 
 
         for(int i = 1; i < SIZE + 1; i++) {
             cout << i % 10 << '|';
             for (int j = 1; j < SIZE + 1; j++) {
-                if (!isVisible(i, j)) continue;
-                isEmpty(i, j) ? cout << "  " : cout << Board[i][j].bomb_num << ' ';
+                if (!isVisible(i, j)) {
+                    cout << "  ";
+                    continue;
+                }
+                isEmpty(i, j) ? cout << "0 " : cout << Board[i][j].bomb_num << ' ';
             }
             cout << "\n";
         }
@@ -71,7 +74,7 @@ void Minesweeper::display(const bool argu) {
                 cout << 'x' <<' ';
             }
             else if (isEmpty(i, j)){
-                cout << "  ";
+                cout << "0 ";
             }
             else {
                 cout << Board[i][j].bomb_num << ' ';
@@ -80,8 +83,7 @@ void Minesweeper::display(const bool argu) {
         cout << "\n";
     }
 
-    return;
-}
+    }
 
 bool Minesweeper::isBomb(const int row, const int col) {return Board[row][col].bomb == 1;}
 
@@ -110,8 +112,30 @@ bool Minesweeper::play(const int row, const int col) {
     if (isBomb(row, col)) return false;
     if (!isEmpty(row, col)) {
         enVisible(row, col);
-
+        return true;
     }
+    //isempty
+    if (isEmpty(row, col)) {
+        vector<coordinate> todo_list;
+        todo_list.push_back((struct coordinate){row, col});
+        while (!todo_list.empty()){
+            auto current = todo_list.back();
+            todo_list.pop_back();
+            if (isVisible(current.row, current.col)) continue;
+            enVisible(current.row, current.col);
+            for (int i = -1; i <= 1; ++i) {
+                for (int j = -1; j <= 1; ++j) {
+                    if(validRow(current.row + i) && validCol(current.col + j) && isEmpty(current.row,current.col)) {
+                        if (!(i == 0 && j == 0)) {
+                            if (!isVisible(current.row + i, current.col + j))
+                                todo_list.push_back((struct coordinate) {current.row + i, current.col + j});
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return true;
 
 }
 

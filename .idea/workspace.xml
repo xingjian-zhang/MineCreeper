@@ -11,22 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tile.h" afterDir="false" />
+    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MineSweeper.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MineSweeper.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/MineSweeper.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coordinate.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coordinate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tile.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,6 +28,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Marco-Jimmy &lt;xingjian_zhang@sjtu.edu.cn&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
@@ -87,8 +80,16 @@
       <updated>1569335728841</updated>
       <workItem from="1569335730988" duration="1681000" />
       <workItem from="1569337480317" duration="651000" />
-      <workItem from="1569379383387" duration="10929000" />
+      <workItem from="1569379383387" duration="17621000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs">
+      <created>1569394003954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569394003954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +105,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Minesweeper.cpp</url>
+          <line>118</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

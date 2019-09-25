@@ -6,10 +6,13 @@
 #define MINESWEEPER_TILE_H
 
 struct Tile {
-    int bomb;
-    int bomb_num;
+    int bomb = 0;
+    int bomb_num = 0;
     bool visible = false;
 };
 
+struct coordinate{
+    int row = -1, col = -1;
+};
 
 #endif //MINESWEEPER_TILE_H

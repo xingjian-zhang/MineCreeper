@@ -4,14 +4,13 @@
 using namespace std;
 
 //test display
-int main(){
+/*int main(){
     Minesweeper sweeper;
     sweeper.display(true);
     cout << "#bomb = " << sweeper.bomb_num;
     return 0;
-}
+}*/
 
-/*
 int main() {
     Minesweeper sweeper;
 // Continue until only invisible cells are bombs
@@ -23,12 +22,13 @@ int main() {
             int r, c;
             cout << "row? ";
             cin >> r;
+
+            cout << "col? ";
+            cin >> c;
             if (!sweeper.validRow(r)) {
                 cout << "Row out of bounds\n";
                 continue;
             }
-            cout << "col? ";
-            cin >> c;
             if (!sweeper.validCol(c)) {
                 cout << "Column out of bounds\n";
                 continue;
@@ -51,4 +51,3 @@ int main() {
     cout << "You won!!!!\n";
     sweeper.display(true); // Final board with bombs shown
 }
-*/
