@@ -80,10 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/coordinate.cpp">
+		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/Minesweeper.cpp">
 			<Option target="MineSweeper"/>
 		</Unit>
-		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/coordinate.h">
+		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/Minesweeper.h">
+			<Option target="MineSweeper"/>
+		</Unit>
+		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/Tile.h">
 			<Option target="MineSweeper"/>
 		</Unit>
 		<Unit filename="C:/Users/10907/CLionProjects/MineSweeper/main.cpp">

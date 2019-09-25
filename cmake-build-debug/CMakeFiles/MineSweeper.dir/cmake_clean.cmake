@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MineSweeper.dir/main.cpp.obj"
-  "CMakeFiles/MineSweeper.dir/coordinate.cpp.obj"
+  "CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj"
   "MineSweeper.pdb"
   "MineSweeper.exe"
   "MineSweeper.exe.manifest"

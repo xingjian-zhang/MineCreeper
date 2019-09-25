@@ -69,29 +69,29 @@ CMakeFiles/MineSweeper.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MineSweeper.dir/main.cpp.s"
 	D:\x86_64-8.1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\10907\CLionProjects\MineSweeper\main.cpp -o CMakeFiles\MineSweeper.dir\main.cpp.s
 
-CMakeFiles/MineSweeper.dir/coordinate.cpp.obj: CMakeFiles/MineSweeper.dir/flags.make
-CMakeFiles/MineSweeper.dir/coordinate.cpp.obj: coordinate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\10907\CLionProjects\MineSweeper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MineSweeper.dir/coordinate.cpp.obj"
-	D:\x86_64-8.1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MineSweeper.dir\coordinate.cpp.obj -c C:\Users\10907\CLionProjects\MineSweeper\cmake-build-debug\coordinate.cpp
+CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj: CMakeFiles/MineSweeper.dir/flags.make
+CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj: ../Minesweeper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\10907\CLionProjects\MineSweeper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj"
+	D:\x86_64-8.1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MineSweeper.dir\Minesweeper.cpp.obj -c C:\Users\10907\CLionProjects\MineSweeper\Minesweeper.cpp
 
-CMakeFiles/MineSweeper.dir/coordinate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MineSweeper.dir/coordinate.cpp.i"
-	D:\x86_64-8.1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\10907\CLionProjects\MineSweeper\cmake-build-debug\coordinate.cpp > CMakeFiles\MineSweeper.dir\coordinate.cpp.i
+CMakeFiles/MineSweeper.dir/Minesweeper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MineSweeper.dir/Minesweeper.cpp.i"
+	D:\x86_64-8.1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\10907\CLionProjects\MineSweeper\Minesweeper.cpp > CMakeFiles\MineSweeper.dir\Minesweeper.cpp.i
 
-CMakeFiles/MineSweeper.dir/coordinate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MineSweeper.dir/coordinate.cpp.s"
-	D:\x86_64-8.1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\10907\CLionProjects\MineSweeper\cmake-build-debug\coordinate.cpp -o CMakeFiles\MineSweeper.dir\coordinate.cpp.s
+CMakeFiles/MineSweeper.dir/Minesweeper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MineSweeper.dir/Minesweeper.cpp.s"
+	D:\x86_64-8.1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\10907\CLionProjects\MineSweeper\Minesweeper.cpp -o CMakeFiles\MineSweeper.dir\Minesweeper.cpp.s
 
 # Object files for target MineSweeper
 MineSweeper_OBJECTS = \
 "CMakeFiles/MineSweeper.dir/main.cpp.obj" \
-"CMakeFiles/MineSweeper.dir/coordinate.cpp.obj"
+"CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj"
 
 # External object files for target MineSweeper
 MineSweeper_EXTERNAL_OBJECTS =
 
 MineSweeper.exe: CMakeFiles/MineSweeper.dir/main.cpp.obj
-MineSweeper.exe: CMakeFiles/MineSweeper.dir/coordinate.cpp.obj
+MineSweeper.exe: CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj
 MineSweeper.exe: CMakeFiles/MineSweeper.dir/build.make
 MineSweeper.exe: CMakeFiles/MineSweeper.dir/linklibs.rsp
 MineSweeper.exe: CMakeFiles/MineSweeper.dir/objects1.rsp

@@ -122,32 +122,32 @@ MineSweeper/fast:
 	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/build
 .PHONY : MineSweeper/fast
 
-coordinate.obj: coordinate.cpp.obj
+Minesweeper.obj: Minesweeper.cpp.obj
 
-.PHONY : coordinate.obj
+.PHONY : Minesweeper.obj
 
 # target to build an object file
-coordinate.cpp.obj:
-	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/coordinate.cpp.obj
-.PHONY : coordinate.cpp.obj
+Minesweeper.cpp.obj:
+	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj
+.PHONY : Minesweeper.cpp.obj
 
-coordinate.i: coordinate.cpp.i
+Minesweeper.i: Minesweeper.cpp.i
 
-.PHONY : coordinate.i
+.PHONY : Minesweeper.i
 
 # target to preprocess a source file
-coordinate.cpp.i:
-	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/coordinate.cpp.i
-.PHONY : coordinate.cpp.i
+Minesweeper.cpp.i:
+	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/Minesweeper.cpp.i
+.PHONY : Minesweeper.cpp.i
 
-coordinate.s: coordinate.cpp.s
+Minesweeper.s: Minesweeper.cpp.s
 
-.PHONY : coordinate.s
+.PHONY : Minesweeper.s
 
 # target to generate assembly for a file
-coordinate.cpp.s:
-	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/coordinate.cpp.s
-.PHONY : coordinate.cpp.s
+Minesweeper.cpp.s:
+	$(MAKE) -f CMakeFiles\MineSweeper.dir\build.make CMakeFiles/MineSweeper.dir/Minesweeper.cpp.s
+.PHONY : Minesweeper.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... MineSweeper
 	@echo ... edit_cache
-	@echo ... coordinate.obj
-	@echo ... coordinate.i
-	@echo ... coordinate.s
+	@echo ... Minesweeper.obj
+	@echo ... Minesweeper.i
+	@echo ... Minesweeper.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

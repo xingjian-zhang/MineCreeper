@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/coordinate.cpp" "C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/CMakeFiles/MineSweeper.dir/coordinate.cpp.obj"
+  "C:/Users/10907/CLionProjects/MineSweeper/Minesweeper.cpp" "C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/CMakeFiles/MineSweeper.dir/Minesweeper.cpp.obj"
   "C:/Users/10907/CLionProjects/MineSweeper/main.cpp" "C:/Users/10907/CLionProjects/MineSweeper/cmake-build-debug/CMakeFiles/MineSweeper.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
