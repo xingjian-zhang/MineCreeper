@@ -10,9 +10,9 @@ The features include:
 ...
 
 The potential improvenment include:
-1. UI is not user-friendly
-2. The number of bombs is determined randomly
-3. rand() of C can be replaced by C++ random function
+1. UI is not user-friendly;
+2. The number of bombs is determined randomly;
+3. rand() of C can be replaced by C++ random function;
 ...
 
 2019/9/25
