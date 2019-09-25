@@ -3,14 +3,6 @@
 
 using namespace std;
 
-//test display
-/*int main(){
-    Minesweeper sweeper;
-    sweeper.display(true);
-    cout << "#bomb = " << sweeper.bomb_num;
-    return 0;
-}*/
-
 int main() {
     Minesweeper sweeper;
 // Continue until only invisible cells are bombs
@@ -50,12 +42,13 @@ int main() {
         }
 // Set selected square to be visible. May effect other cells.
         if (!sweeper.play(row_sel,col_sel)) {
-            cout << "Sorry, you died..\n";
+            cout << "SORRY! YOU LOSE.\n";
             sweeper.display(true); // Final board with bombs shown
             exit(0);
         }
     }
 // Ah! All invisible cells are bombs, so you won!
-    cout << "You won!!!!\n";
+    cout << "YOU WON!\n";
     sweeper.display(true); // Final board with bombs shown
+    exit(0);
 }

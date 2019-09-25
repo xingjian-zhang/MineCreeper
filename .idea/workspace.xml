@@ -11,7 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="" />
+    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="fifth commit&#10;&#10;new:&#10;  pdf instruction&#10;todo:&#10;  test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper.h" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +80,8 @@
       <updated>1569335728841</updated>
       <workItem from="1569335730988" duration="1681000" />
       <workItem from="1569337480317" duration="651000" />
-      <workItem from="1569379383387" duration="20536000" />
+      <workItem from="1569379383387" duration="22647000" />
+      <workItem from="1569409318371" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs">
       <created>1569394003954</created>
@@ -98,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569403382275</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fourth commit&#10;&#10;new:&#10;  pdf instruction&#10;todo:&#10;  test">
+      <created>1569403639706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569403639706</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +122,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -119,18 +134,10 @@
     <MESSAGE value="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs" />
     <MESSAGE value="third commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  play&#10;todo:&#10;  test" />
     <MESSAGE value="fourth commit&#10;&#10;new:&#10;  flag&#10;todo:&#10;  test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth commit&#10;&#10;new:&#10;  flag&#10;todo:&#10;  test" />
+    <MESSAGE value="fourth commit&#10;&#10;new:&#10;  pdf instruction&#10;todo:&#10;  test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit&#10;&#10;new:&#10;  pdf instruction&#10;todo:&#10;  test" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>40</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="Board[row][col].flag" language="ObjectiveC" />

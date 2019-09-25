@@ -7,7 +7,6 @@
 #include <iostream>
 #include "Minesweeper.h"
 
-
 using namespace std;
 
 Minesweeper::Minesweeper() {
@@ -19,8 +18,8 @@ Minesweeper::Minesweeper() {
     for(int i = 0; i < SIZE + 2; i++){
         for(int j = 0; j < SIZE + 2; j++){
             Board[i][j].bomb_num = 0;
-            if((i==0)||(i==SIZE+1)||(j==0)||(j==SIZE+1)){
-                Board[i][j].bomb = 0;
+            if((SIZE + 1 == j) || (i == 0) || (i == SIZE + 1) || (j == 0)){
+                Board[i][j].bomb = 0;       //set the border to be empty to simplify the edge cases
                 continue;
             }
             Board[i][j].bomb = (rand() % 100) < BOMB_PROBABILITY ? 1 : 0;
@@ -43,10 +42,11 @@ Minesweeper::Minesweeper() {
 
 }
 
+//display the board
 void Minesweeper::display(const bool argu) {
     cout << " ";
     for (int j = 1; j < SIZE + 1; ++j) {
-        cout << j % 10 << '_';
+        cout << j % 10 << '_';      //mod 10 to align correctly
     }
     cout << "\n";
 
@@ -56,30 +56,27 @@ void Minesweeper::display(const bool argu) {
             for (int j = 1; j < SIZE + 1; j++) {
                 if (!isVisible(i, j)) {
                     if (isflag(i, j)) {
-                        cout << "P ";
+                        cout << "P ";       //P represents a flag
                     }
                     else {
-                    cout << "  ";
+                    cout << "  ";       //space represents invisible cell
                     }
                     continue;
                 }
-                isEmpty(i, j) ? cout << "0 " : cout << Board[i][j].bomb_num << ' ';
+                cout << Board[i][j].bomb_num << ' ';
             }
             cout << "\n";
         }
         return;
     }
 
-    for(int i = 1; i < SIZE + 1; i++) {
+    for(int i = 1; i < SIZE + 1; i++) {         //display everything when game is over
         cout << i % 10 << '|';
         for (int j = 1; j < SIZE + 1; j++) {
             if (isBomb(i, j)){
                 cout << 'x' <<' ';
             }
-            else if (isEmpty(i, j)){
-                cout << "0 ";
-            }
-            else {
+            else{
                 cout << Board[i][j].bomb_num << ' ';
             }
         }
@@ -97,12 +94,13 @@ bool Minesweeper::isVisible(const int row, const int col) {return Board[row][col
 bool Minesweeper::done() {
     for (int i = 1; i < SIZE + 1; ++i) {
         for (int j = 1; j < SIZE + 1; ++j) {
-            if (!isVisible(i, j) && !isBomb(i, j)) return false;
+            if (!isVisible(i, j) && !isBomb(i, j)) return false;        //player wins only if all cells without bombs is visible
         }
     }
     return true;
 }
 
+//prevent exceeding border
 bool Minesweeper::validRow(const int row) {
     return row > 0 && row < SIZE + 1;
 }
@@ -111,14 +109,17 @@ bool Minesweeper::validCol(const int col) {
     return col > 0 && col < SIZE + 1;
 }
 
+//the most important function:
+//make a cell visible or
+//make the cells around current cell visible if there is no bombs surrounding
 bool Minesweeper::play(const int row, const int col) {
-    if (isBomb(row, col)) return false;
+    if (isBomb(row, col)) return false;         //give a signal to kill the game
     if (!isEmpty(row, col)) {
         enVisible(row, col);
         return true;
     }
     //isempty
-    if (isEmpty(row, col)) {
+    if (isEmpty(row, col)) {        //DFS based on stack
         vector<coordinate> todo_list;
         todo_list.push_back((struct coordinate){row, col});
         while (!todo_list.empty()){
@@ -146,7 +147,7 @@ void Minesweeper::enVisible(const int row, const int col) {
     Board[row][col].visible = true;
 }
 
-void Minesweeper::flag(const int row, const int col) {
+void Minesweeper::flag(const int row, const int col) {          //change the flag status
     Board[row][col].flag = !Board[row][col].flag;
 }
 

@@ -48,9 +48,7 @@ public:
     void flag(int row, int col);
     bool isflag(int row, int col);
 
-
-
-    int bomb_num;
+    int bomb_num = 0;
 
 private:
     vector<vector<Tile>> Board = vector<vector<Tile>>(SIZE + 2,vector<Tile>(SIZE + 2));
