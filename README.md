@@ -1,7 +1,7 @@
 # Project Name: MineCreeper
 # Author: Zhang Xingjian, China
 
-This is a MineCreeper game based on C++. The interaction is through stdIO. It is also possible that I will make a GUI for it.
+This is a MineCreeper game based on C++. The interaction is through stdIO. It is also possible that I will make a GUI for it. 
 
 The features include:
 1. Difficulty manipulation;
@@ -15,4 +15,5 @@ The potential improvenment include:
 3. rand() of C can be replaced by C++ random function;
 ...
 
+xingjian_zhang@sjtu.edu.cn
 2019/9/25
