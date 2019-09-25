@@ -11,13 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="fourth commit&#10;&#10;new:&#10;  flag&#10;todo:&#10;  test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper.h" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="48140fd9-d61c-4fc8-a7de-eca89fa6a0d7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
       <updated>1569335728841</updated>
       <workItem from="1569335730988" duration="1681000" />
       <workItem from="1569337480317" duration="651000" />
-      <workItem from="1569379383387" duration="20292000" />
+      <workItem from="1569379383387" duration="20536000" />
     </task>
     <task id="LOCAL-00001" summary="second commit&#10;&#10;new:&#10;  UI interface&#10;  class of MineSweeper&#10;  &#10;todo:&#10;  play() //dfs">
       <created>1569394003954</created>
@@ -97,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569400873623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fourth commit&#10;&#10;new:&#10;  flag&#10;todo:&#10;  test">
+      <created>1569403382275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569403382275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
